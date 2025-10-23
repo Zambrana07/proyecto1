@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Agregar Especie - La biodiversidad del coco</title>
+</head>
+
+<body class="bg-overlay" style="background-image: url('https://images.unsplash.com/photo-1583212292454-1fe6229603b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="consultar.html">Consultar especies</a></li>
+                <li><a href="especies.html">Agregar especie</a></li>
+                <li><a href="inicial.html">Información</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="form-container">
+                <h2>Agregar Nueva Especie</h2>
+                <form>
+                    <label for="imagen">Subir imagen de la especie:</label>
+                    <input type="file" id="imagen" name="imagen" accept="image/*" required>
+
+                    <label for="nombre">Nombre de la especie:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Ara macao" required>
+
+                    <label for="categoria">Categoría:</label>
+                    <select id="categoria" name="categoria" required>
+                        <option value="" disabled selected>Seleccione una categoría</option>
+                        <option value="ave">Ave</option>
+                        <option value="mamifero">Mamífero</option>
+                        <option value="reptil">Reptil</option>
+                        <option value="anfibio">Anfibio</option>
+                        <option value="pez">Pez</option>
+                        <option value="insecto">Insecto</option>
+                        <option value="planta">Planta</option>
+                    </select>
+
+                    <button type="submit" class="btn">Agregar especie</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="transitions.js"></script>
+</body>

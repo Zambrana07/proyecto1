@@ -1,0 +1,38 @@
+<!-- ...existing code... -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="responsive.css">
+    <title>La biodiversidad del coco</title>
+</head>
+<body class="bg-overlay" style="background-image: url('https://laderasur.com/wp-content/uploads/2022/01/isla-del-coco-2-e1614034845182-1568x1002-1.jpeg');">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="consultar.html">Consultar especies</a></li>
+                <li><a href="especies.html">Agregar especie</a></li>
+                <li><a href="inicial.html">Información</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <div class="container">
+            <h1>La Biodiversidad del Coco</h1>
+            <button class="btn Explorar">Explorar</button>
+        </div>
+    </main>
+
+    <script src="transitions.js"></script>
+    <script>
+    // Transición específica para el botón Explorar
+    document.querySelector('.Explorar').addEventListener('click', function (e) {
+        e.preventDefault();
+        smoothTransition('inicial.html');
+    });
+</script>
+
+
+</body>
