@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url("https://laderasur.com/wp-content/uploads/2022/01/isla-del-coco-2-e1614034845182-1568x1002-1.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.3); /* capa oscura más visible */
+    z-index: -1;
+}
+
+header {
+    height: 9vh;
+    width: 100%;
+    background-color: #005f73;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+nav ul li a {
+    color: #e9d8a6;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: all 0.3s;
+
+}
+
+nav ul li a:hover {
+    color: #94d2bd;
+        text-decoration: underline;
+
+}
+
+main {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 70vh;
+    background-color: transparent;
+    text-align: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 10rem;
+    margin-bottom: 2rem;
+    text-shadow:
+        2px 2px 4px rgba(0, 0, 0, 0.6),   /* sombra principal */
+        4px 4px 8px rgba(0, 0, 0, 0.3),   /* sombra secundaria para más profundidad */
+        0 0 10px rgba(255, 255, 255, 0.1); /* leve brillo */
+    transform: translateZ(0); /* mejora el renderizado en algunos navegadores */
+}
+
+.Explorar {
+    width: 20vw;
+    padding: 0.75rem 1.5rem;
+    font-size: 5rem;
+    border: none;
+    border-radius: 30px;
+    background-color: #0a9396;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Explorar:hover {
+    background-color: #94d2bd;
+    color: #00343a;
+}
+
+.fade-out {
+    animation: fadeOut 1s ease forwards;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        transform: scale(0.98);
+        filter: blur(2px);
+    }
+}
