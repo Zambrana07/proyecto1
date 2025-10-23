@@ -1,0 +1,39 @@
+<!-- ...existing code... -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>La biodiversidad del coco</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Consultar especies</a></li>
+                <li><a href="especies.html">Agregar especie</a></li>
+                <li><a href="#">Información</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="Inicio">
+        <h1>La Biodiversidad del Coco</h1>
+        <button class="Explorar">Explorar</button>
+    </main>
+
+    <script>
+    document.querySelector('.Explorar').addEventListener('click', function (e) {
+        e.preventDefault(); // Previene comportamiento por defecto
+        document.body.classList.add('fade-out'); // Aplica la animación
+
+        // Espera a que la animación termine antes de ir a la otra página
+        setTimeout(function () {
+            window.location.href = 'inicial.html';
+        }, 1000); // duración de la animación (1s)
+    });
+</script>
+
+
+</body>
